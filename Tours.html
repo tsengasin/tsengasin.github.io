@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Newgrange - Tours</title>
+<!--		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+		<link href="CSS/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/stylesheet.css">
+		<link rel="stylesheet" href="css/tours.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		
+<!--		collapsible content script-->
+		<script>
+			$('.panel-collapse').on('show.bs.collapse', function () {
+				$(this).siblings('.panel-heading').addClass('active');
+			});
+
+			$('.panel-collapse').on('hide.bs.collapse', function () {
+				$(this).siblings('.panel-heading').removeClass('active');
+			});
+			$(document).ready(function(){
+				$(document).off('click.bs.dropdown.data-api');
+			});
+		</script>
+	</head>
+	<body>
+	<noscript>Your browser does not support JavaScript!</noscript>
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #f6ffed" id="navbarbox">
+			<a href="index.html"><img src = "images/logo.png" alt = "logo" id="logo" style ="margin-left: 30px"/></a>
+			<button class ="navbar-toggler" data-toggle="collapse" data-target="#expandme" style ="margin-right:20px">
+				<span class="navbar-toggler-icon" ></span>
+			</button>
+
+			<div class = "collapse navbar-collapse justify-content-end" id="expandme">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link nav-link" href="index.html">Homepage <span class="sr-only"></span></a>
+
+					<li class="nav-item dropdown">
+						<a class= "nav-link dropdown-toggle" href="Newgrange.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Newgrange<span class="sr-only"></span></a>
+
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="Newgrange.html">History</a>
+							<a class="dropdown-item" href="Newgrange.html#People">Neolithic People</a>
+							<a class="dropdown-item" href="Newgrange.html#Purpose">Purpose</a>
+							<a class="dropdown-item" href="Newgrange.html#Excavations">Excavations of Newgrange</a>
+							<a class="dropdown-item" href="Newgrange.html#WinterSolstice">Winter Solstice</a>
+							<a class="dropdown-item" href="Newgrange.html#Art">Art</a>
+							<a class="dropdown-item" href="Newgrange.html#Tales">Tales of Newgrange</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class= "nav-link dropdown-toggle" href="Knowth.html" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Knowth</a>
+
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+							<a class="dropdown-item" href="Knowth.html#History">History</a>
+
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class= "nav-link dropdown-toggle" href="Dowth.html" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dowth</a>
+
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+							<a class="dropdown-item" href="Dowth.html#History">History</a>
+							<a class="dropdown-item" href="Dowth.html#Tales">Tales of Dowth</a>
+
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class= "nav-link dropdown-toggle active" href="Plan.html" id="navbarDropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Plan</a>
+
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+							<a class="dropdown-item" href="Tours.html">Tours</a>
+							<a class="dropdown-item" href="Loc_tran.html">Getting to Newgrange</a>
+							<a class="dropdown-item" href="Itineraries.html">Itineraries</a>
+							<a class="dropdown-item" href="Tools_tips.html">Tools and Tips</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class= "nav-link dropdown-toggle" href="Community.html" id="navbarDropdownMenuLink4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Community</a>
+
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink4">
+							<a class="dropdown-item" href="communitybusiness.html">The Community Business</a>
+							<a class="dropdown-item" href="Donate.html">Donate</a>
+						</div>
+					</li>
+				</ul>
+
+				<a href="buytickets.html" class="btn btn-success" role="button"> Buy Tickets</a>
+			</div>
+		</nav>
+</div>
+
+<div class="container">
+				<div class="intro">
+
+				<p> &nbsp; </p>
+				<ul class = "statusbar">
+					<li><a href="index.html"> Home</a></li>
+                    <li>/ </li>
+                    <li><a href="Plan.html"> Plan</a></li>
+					<li>/ Tours</li>
+				</ul>
+				<h2> Tours </h2>
+					<p> There are two types of tours we provide, which are half-day tours and day tours. Schools and communities are welcome to book our service and tour itineraries can be arranged if required. For any specific service, we encourage you to call +853 000 000 0000 or email nomuchemail@newgrange.ie. </p>
+
+				<!-- COLLAPSIBLE CONTENT -->
+				<div class="wrapper center-block">
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+					<div class="panel panel-default">
+					<div class="panel-heading active" role="tab" id="headingOne">
+						<h2 class="panel-title">
+						<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							Overview
+						</a>
+						</h2>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+						<div class="panel-body">
+							<p>
+								Join us to learn the history of Newgrange, Dowth and Knowth! Our half-day and day tours take you into the principal monuments in the World Heritage Property in Ireland.
+								All these sites have been built for over 5000 years and they attract a great amount of tourists to visit every year.
+								<br>
+								As the official authority for Newgrange and Knowth, we will introduce you to walk around Newgrange, Dowth and Knowth with the best guide.
+								The chamber visiting is a must when visiting us. Exploring these buildings with a mysterious vibe is a great adventure that should not be missed.
+								<br>
+								Our guides will lead you through an informative day with the history of our sites along with some fascinating tales that you will never know by yourself.
+								Our tours will be both educational and entertaining. One thing for sure is that all of our staff is professional and qualified.
+								<br>
+								You will never regret joining our tours!
+								It will be an unbelievable “time travel” when we dig into history by exploring Newgrange!
+								We treasure your experience and time, therefore, we will depart at 8:00 am with a full and fruitful schedule and return to Dublin by 1:00 pm or 6:00 pm depends on your tour.
+								<br>
+								As for the full-day tour, we aim to provide you with more than knowledge. You will visit the local community in Drogheda to not only learn what forms this city but also enjoy the historical and warm atmosphere of the city.
+								<br>
+								They will be the tours that offer historical enrichment to you once you join them. We are all looking forward to seeing you.
+							</p>
+						</div>
+					</div>
+					</div>
+					<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingTwo">
+						<h2 class="panel-title">
+						<a class="collapsed button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							Half-Day Tour Itinerary
+						</a>
+						</h2>
+					</div>
+					<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+						<div class="panel-body">
+							<p>
+								08;00 AM: Depart Dublin<br>
+								We meet at the front entrance of Trinity College Dublin. You will board our coach with a bottle of water and a booklet of the itinerary of the tour. You can meet your fellow traveller and relax when you get on our coach. However, we will not wait for any late customer and a refund is not possible in this case. Therefore, we suggest you arrive 15 minutes earlier and pay attention to any phone call.<br><br>
+
+								08:45 AM: The visitor Centre Exhibition<br>
+								This is the starting point for the day. In the exhibition, we will introduce you to history, myth and folklore. Here, we will also remind our tourists about some notices and prohibitions for Newgrange, Dowth and Knowth. If you do not obey any prohibitions and rules as mentioned, you will face a fine, penalty or sentence for prison. We appreciate our tourists, and we hope that we can enjoy the tour together and also help the maintenance of these lovely sites.<br><br>
+
+								10:00 AM: The Dowth<br>
+								Seeing is believing, therefore, after learning the history in the exhibition, we will walk across the River Boyne to Dowth. Having watched the X-ray map in the exhibition, tourists will now resonate with the site better now. They will be amazed and wonder what the reason behind Dowth is. We are happy to take pictures for our tourists and answer any question.<br><br>
+
+								11:00 AM: Newgrange<br>
+								This is one of the main sites of our tour because of the well-preserved heritage and tourists are allowed to enter the chamber to feel the wisdom of our precedence. It is not a secret that the chamber’s design is meticulous and divine that the passageway will be lighted up by a window in the morning during the winter solstice period. We are very delighted if we share our passion and knowledge with our tourists, and it will be a highlight of the tour.<br><br>
+
+								Noon: Knowth<br>
+								You will not be disappointed even though you visit Newgrange before Knowth. There are 21 tombs in Knowth and all of them create a mysterious feeling for us and you might wonder what every tomb was for. We will guide you to explore them and encourage you to imagine. We ensure that you will love Knowth as much as Newgrange!<br><br>
+
+								1:00 PM Depart Drogheda to Dublin<br>
+								You will be back in Dublin by 14:00.
+							</p>
+						</div>
+					</div>
+					</div>
+					<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingThree">
+						<h2 class="panel-title">
+						<a class="collapsed button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							Day Tours Itinerary
+						</a>
+						</h2>
+					</div>
+					<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+						<div class="panel-body">
+							<p>
+								08;00 AM: Depart Dublin<br>
+								We meet at the front entrance of Trinity College Dublin. You will board our coach with a bottle of water and a booklet of the itinerary of the tour. You can meet your fellow traveller and relax when you get on the coach. However, we will not wait for any late customer and a refund is not possible in this case. Therefore, we suggest you arrive 15 minutes earlier and pay attention to any phone call.<br><br>
+
+								08:45 AM: The visitor Centre Exhibition<br>
+								This is the starting point for the day. In the exhibition, we will introduce you to history, myth and folklore. Here, we will also remind our tourists about some notices and prohibitions for Newgrange, Dowth and Knowth. If you do not obey any prohibitions and rules as mentioned, you will face a fine, penalty or sentence for prison. We appreciate our tourists, and we hope that we can enjoy the tour together and also help the maintenance of these lovely sites.<br><br>
+
+								10:00 AM: The Dowth<br>
+								Seeing is believing, therefore, after learning the history in the exhibition, we will walk across the River Boyne to Dowth. Having watched the X-ray map in the exhibition, tourists will now resonate with the site better now. They will be amazed and wonder what the reason behind Dowth is. We are happy to take pictures for our tourists and answer any question.<br><br>
+
+								11:00 AM: Newgrange<br>
+								This is one of the main sites of our tour because of the well-preserved heritage and tourists are allowed to enter the chamber to feel the wisdom of our precedence. It is not a secret that the chamber’s design is meticulous and divine that the passageway will be lighted up by a window in the morning during the winter solstice period. We are very delighted if we share our passion and knowledge with our tourists, and it will be a highlight of the tour.<br><br>
+
+								Noon: Knowth<br>
+								You will not be disappointed even though you visit Newgrange before Knowth. There are 21 tombs in Knowth and all of them create a mysterious feeling for us and you might wonder what every tomb was for. We will guide you to explore them and encourage you to imagine. We ensure that you will love Knowth as much as Newgrange!<br><br>
+
+								1:00 PM Lunch<br>
+								We know that you must be starving after visiting all these sites, therefore, we will bring you back to Drogheda and you can pick any restaurant if you want in Drogheda. You have to feed yourself well because we will show you around Slane Castle after lunch.<br><br>
+
+								3:00 PM Slane Castle<br>
+								Slane Castle is an 18th-century estate adjacent to the River Boyne. We are sure that you would love to take as many pictures as you can, therefore we will not let you down!<br><br>
+
+								4:00 PM Listoke Distillery & Gin School<br>
+								We are sure that you will always want some souvenir to take home, therefore we will bring you to this gin school to learn about the first and only interactive gin experience in Ireland. Not even gaining knowledge about gin, you can also bring a bottle of gin home.<br><br>
+
+								5:00 PM Depart Drogheda to Dublin<br>
+								After the long day, you can now board our comfortable coach heading to Dublin.<br><br>
+							</p>
+						</div>
+					</div>
+					</div>
+				</div>
+				</div>
+				</div>
+</div>
+
+	<footer>
+		<nav class="navbar fixed-bottom navbar-light " style="background-color: white;">
+			<div class="navbar-nav">
+				<ul>
+					<li><a class= "nav-item nav-link" href="Contact_Us.html" >Contact Us</a></li>
+					<li> <p> &nbsp; </p></li>
+					<li><a class= "nav-item nav-link" href="Aboutus.html">About Us</a></li>
+					<li> <p> &nbsp; </p></li>
+					<li><a class= "nav-item nav-link" href="https://www.instagram.com/newgrangemeath/">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+							<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+						</svg>
+					</a>
+					</li>
+					<li> <p> &nbsp; </p></li>
+					<li><a class= "nav-item nav-link" href="https://www.facebook.com/newgrange.meath/">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+							<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+						</svg>
+					</a>
+					</li>
+					<li> <p> &nbsp; </p></li>
+					<li><a class= "nav-item nav-link" href="https://www.youtube.com/channel/UCoIOBtLEp36cD1oL0wabXYw">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+							<path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+						</svg>
+					</a>
+					</li>
+					<li> <p> &nbsp; </p></li>
+					<li><p>© IDM 2021- Group 2 <span style ="margin-left:8vw"></span> </p></li>
+				</ul>
+			</div>
+		</nav>
+	</footer>
+	</body>
+</html>

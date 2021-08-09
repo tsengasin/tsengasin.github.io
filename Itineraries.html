@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Itineraries</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+		<link href="CSS/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/stylesheet.css">
+		<link rel="stylesheet" href="css/tours.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		
+		<!--collapsible content script-->
+		<script>
+			$('.panel-collapse').on('show.bs.collapse', function () {
+				$(this).siblings('.panel-heading').addClass('active');
+			});
+
+			$('.panel-collapse').on('hide.bs.collapse', function () {
+				$(this).siblings('.panel-heading').removeClass('active');
+			});
+			
+			$(document).ready(function(){
+				$(document).off('click.bs.dropdown.data-api');
+			})
+	</script>
+	</head>
+
+	<body>
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #f6ffed" id="navbarbox">
+			<a href="index.html"><img src = "images/logo.png" alt = "logo" id="logo" style ="margin-left: 30px"/></a>
+			<button class ="navbar-toggler" data-toggle="collapse" data-target="#expandme" style ="margin-right:20px">
+				<span class="navbar-toggler-icon" ></span>
+			</button>
+
+			<div class = "collapse navbar-collapse justify-content-end" id="expandme">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link nav-link" href="index.html">Homepage <span class="sr-only"></span></a>
+
+					<li class="nav-item dropdown">
+						<a class= "nav-link dropdown-toggle" href="Newgrange.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Newgrange<span class="sr-only"></span></a>
+
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="Newgrange.html">History</a>
+							<a class="dropdown-item" href="Newgrange.html#People">Neolithic People</a>
+							<a class="dropdown-item" href="Newgrange.html#Purpose">Purpose</a>
+							<a class="dropdown-item" href="Newgrange.html#Excavations">Excavations of Newgrange</a>
+							<a class="dropdown-item" href="Newgrange.html#WinterSolstice">Winter Solstice</a>
+							<a class="dropdown-item" href="Newgrange.html#Art">Art</a>
+							<a class="dropdown-item" href="Newgrange.html#Tales">Tales of Newgrange</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class= "nav-link dropdown-toggle" href="Knowth.html" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Knowth</a>
+
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+							<a class="dropdown-item" href="Knowth.html#History">History</a>
+
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class= "nav-link dropdown-toggle" href="Dowth.html" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dowth</a>
+
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+							<a class="dropdown-item" href="Dowth.html#History">History</a>
+							<a class="dropdown-item" href="Dowth.html#Tales">Tales of Dowth</a>
+
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class= "nav-link dropdown-toggle active" href="Plan.html" id="navbarDropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Plan</a>
+
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+							<a class="dropdown-item" href="Tours.html">Tours</a>
+							<a class="dropdown-item" href="Loc_tran.html">Getting to Newgrange</a>
+							<a class="dropdown-item" href="Itineraries.html">Itineraries</a>
+							<a class="dropdown-item" href="Tools_tips.html">Tools and Tips</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class= "nav-link dropdown-toggle" href="Community.html" id="navbarDropdownMenuLink4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Community</a>
+
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink4">
+							<a class="dropdown-item" href="communitybusiness.html">The Community Business</a>
+							<a class="dropdown-item" href="Donate.html">Donate</a>
+						</div>
+					</li>
+				</ul>
+
+				<a href="buytickets.html" class="btn btn-success" role="button"> Buy Tickets</a>
+			</div>
+		</nav>
+	</div>
+	
+	<div class="container">
+		<p> &nbsp; </p>
+		<p> &nbsp; </p>
+		
+		<div class="intro">
+			<ul class = "statusbar">
+				<li><p><a href="index.html"> Home</a></p></li>
+				<li><p>/ </li>
+				<li><p><a href="Plan.html"> Plan</a></p></li>
+				<li><p>/ Itineraries</p></li>
+			</ul>
+		</div>
+		
+		<h2> Itineraries  </h2>
+		<p> We know that many people love to plan their visits. Therefore, there are some places worth a visit in Drogheda.</p>
+			
+		<!-- COLLAPSIBLE CONTENT -->
+		<div class="wrapper center-block">
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				<div class="panel panel-default">
+					<div class="panel-heading active" role="tab" id="headingOne">
+						<h2 class="panel-title">
+							<a href="#collapseOne" role="button" data-toggle="collapse" data-parent="#accordion"  aria-expanded="true" aria-controls="collapseOne">
+								Highlanes Municipal Art Gallery
+							</a>
+						</h2>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+						<div class="panel-body">
+							<p>
+								Don’t judge a book by its cover – Highlanes Municipal Art Gallery might not look like a modern gallery if you look for its outside. The gallery is sited in the former Drogheda Franciscan Church which was called the “High lane Church”. This gallery has been working hard on education and local art, therefore, it is necessary that we show our support through visiting and donation so as to help the gallery to reach its goal of long-term development.
+					
+								Visit the website:
+								https://highlanes.ie/about-the-gallery/about-us/
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingTwo">
+						<h2 class="panel-title">
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							Battle of the Boyne Visitor Centre
+						</a>
+						</h2>
+					</div>
+					<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+						<div class="panel-body">
+							<p>
+								It is never easy to protect your lands without any battle in history. This visitor centre can give you a fascinating insight into battles since 1690 around the area. The centre also provides high- quality refreshments at the Tearoom Pavilion, visitors can enjoy food inside the building or in the outdoor area under the sun. This site will satisfy you with great knowledge as well as delicacy.
+					
+								Visit the website:
+								http://battleoftheboyne.ie/tea-pavillion/
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingThree">
+						<h2 class="panel-title" >
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							St Peter's Church
+						</a>
+						</h2>
+					</div>
+					<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+						<div class="panel-body">
+							<p>
+								This church is one of the landmarks in Drogheda that has typical features of Gothic buildings. Every window, status and door is artistic and well-designed. If you visit Drogheda, you have no excuse for not visiting it.
+								Visit the Website:
+								https://www.saintpetersdrogheda.ie/our-parish/our-history/
+					
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingFour">
+						<h2 class="panel-title" >
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+							St Laurence Gate
+						</a>
+						</h2>
+					</div>
+					<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+						<div class="panel-body">
+							<p>
+								St Laurence’s Gate is regarded as one of the finest of its kind in Europe. The mediaeval wall and its structure provide a great historical vibe to visitors, therefore, we encourage visitors to explore this place, especially since this church is close to many tourist spots in Drogheda.
+				
+								Visit the Website:
+								https://www.discoverireland.ie/louth/st-laurence-s-gate-drogheda-walls
+				
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingFive">
+						<h2 class="panel-title" >
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+							Magdalene Tower
+						</a>
+						</h2>
+					</div>
+					<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+						<div class="panel-body">
+							<p>
+								Magdalene Tower is one of the important heritage sites of Dominican Friary founded in about 1224. This tower has been going through a lot of history and was damaged by Cromwell’s cannon during the siege of 1649. History is always an important part of our life, so this tower should be listed on your list to go.
+				
+								Visit the Website:
+								https://www.drogheda.ie/explore-and-do/explore/sacred/magdalene-tower.html
+				
+							</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingSix">
+						<h2 class="panel-title" >
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+							Drogheda Museum Millmount
+						</a>
+						</h2>
+					</div>
+					<div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+						<div class="panel-body">
+							<p>
+								This site is reputed to be 3000 years old. However, it was damaged during the Irish Civil War in 1922. After that, this tower was restored in 2000. What makes this tower unique is that it is now run as a community museum.
+				
+								Visit the Website:
+								https://www.drogheda.ie/explore-and-do/explore/castles-and-conquests/millmount.html
+				
+							</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingSeven">
+						<h2 class="panel-title" >
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+							Monasterboice Monastic Site
+						</a>
+						</h2>
+					</div>
+					<div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+						<div class="panel-body">
+							<p>
+								Monasterboice is a monastic site with a round tower founded in the 600s. Religion has been changing, and the important role of this site was replaced by the Mellifront Abbey in 1142. Battle, wars and religious replacement of this site really give us a great insight into the history and hopefully, we can learn some lessons from visiting this site.
+				
+								Visit the Website:
+								https://www.discoverireland.ie/louth/monasterboice-high-cross-and-round-tower
+				
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingEight">
+						<h2 class="panel-title" >
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+							Mellifont Abbey
+						</a>
+						</h2>
+					</div>
+					<div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+						<div class="panel-body">
+							<p>
+								Mellifont Abbey was founded in 1142 to train monks until monasteries were suppressed by King Henry VIII in 1539 and the Mellifont Abbey was ruined since then. This site is a sign of belief and it will be a good place to visit. If you are on your car trip, you will only need to drive 15 minutes from Newgrange to this place.
+				
+								Visit the Website:
+								https://mellifontabbey.ie/history/
+				
+							</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingNine">
+						<h2 class="panel-title" >
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+							Beaulieu House and Gardens
+						</a>
+						</h2>
+					</div>
+					<div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+						<div class="panel-body">
+							<p>
+								Beaulieu is an ancient estate adjacent to the town of Drogheda and it has been built over 800 years as a home to two families, the Plunketts and the Tichbournes. It is interesting that this estate was inherited by the female line of the families. This is very unique back in the days in the 18th century.
+				
+								Visit the Website:
+								https://beaulieuhouse.ie/a-short-history-of-beaulieu/
+				
+							</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingTenth">
+						<h2 class="panel-title" >
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTenth" aria-expanded="false" aria-controls="collapseTenth">
+							Hill of Slane
+						</a>
+						</h2>
+					</div>
+					<div id="collapseTenth" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTenth">
+						<div class="panel-body">
+							<p>
+								The Hill of Slane has many historic sites on it and it has been chosen as the site of Christian abbey to have missionary work on this area because of Patrick’s devotion. Legend has it that this hill suffered from a fire because of the contest between a Christian missionary and native Irish pagans in 433 CE. There were a lot of stories that happened in this area and we should not miss any of them.
+								Visit the Website:
+								https://www.boynevalleytours.com/hill-of-slane.htm
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="heading11">
+						<h2 class="panel-title" >
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse11" aria-expanded="false" aria-controls="collapse11">
+							Slane Castle
+						</a>
+						</h2>
+					</div>
+					<div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
+						<div class="panel-body">
+							<p>
+								Slane Castle is one of the most fascinating buildings in Ireland because of its construction. This building was built in 1703, however, there is often fire when it comes to the preservation of heritage. In 1991, a fire in the castle damaged the building badly and it reopened in 2001 after a serious restoration.
+				
+								Visit the Website:
+								https://www.boynevalleytours.com/slane-castle-tour.htm
+				
+							</p>
+						</div>
+					</div>
+				</div>
+				
+		
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="heading12">
+						<h2 class="panel-title" >
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse12" aria-expanded="false" aria-controls="collapse12">
+							Listoke Distillery & Gin School
+						</a>
+						</h2>
+					</div>
+					<div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading12">
+						<div class="panel-body">
+							<p>
+								It would be a stereotype to think that Drogheda is only an old traditional and historical place when this place is full of lively and energetic people. Listoke Distillery & Gin School is the first gin school in Ireland, and it is an important role in local business and revitalization. This school is never left behind the trend. When COVID-19 spread all over the state causing a lack of hand sanitizers, this school started producing their alcoholic sanitizers to help its business and society. Therefore, why not visit this gin school when things become normal?
+				
+								Visit the Website:
+								https://shop.listokedistillery.ie/information
+				
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+
+	<footer>
+		<nav class="navbar navbar-expand-sm navbar-light " style="background-color: white;">
+			<div class="navbar-nav">
+				<ul>
+					<li><a class= "nav-item nav-link" href="Contact_Us.html" >Contact Us</a></li>
+					<li> <p> &nbsp; </p></li>
+					<li><a class= "nav-item nav-link" href="Aboutus.html">About Us</a></li>
+					<li> <p> &nbsp; </p></li>
+					<li><a class= "nav-item nav-link" href="https://www.instagram.com/newgrangemeath/">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+							<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+						</svg>
+					</a>
+					</li>
+					<li> <p> &nbsp; </p></li>
+					<li><a class= "nav-item nav-link" href="https://www.facebook.com/newgrange.meath/">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+							<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+						</svg>
+					</a>
+					</li>
+					<li> <p> &nbsp; </p></li>
+					<li><a class= "nav-item nav-link" href="https://www.youtube.com/channel/UCoIOBtLEp36cD1oL0wabXYw">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+							<path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+						</svg>
+					</a>
+					</li>
+					<li> <p> &nbsp; </p></li>
+					<li><p>© IDM 2021- Group 2 <span style ="margin-left:8vw"></span> </p></li>
+				</ul>
+			</div>
+		</nav>
+	</footer>
+	</body>
+</html>
